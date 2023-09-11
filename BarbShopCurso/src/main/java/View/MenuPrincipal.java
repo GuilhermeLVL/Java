@@ -1,12 +1,13 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package View;
 
 /**
  *
- * @author l-0-l
+ * @author tiago
  */
 public class MenuPrincipal extends javax.swing.JFrame {
 
@@ -26,51 +27,86 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        LabelFundoMenuPrincipal = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        Cadastro = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        MenuCadastro = new javax.swing.JMenu();
+        MenuItemCliente = new javax.swing.JMenuItem();
+        MenuItemServico = new javax.swing.JMenuItem();
+        MenuItemUsuario = new javax.swing.JMenuItem();
+        MenuOperacao = new javax.swing.JMenu();
+        MenuItemAgenda = new javax.swing.JMenuItem();
+        MenuRelatorio = new javax.swing.JMenu();
+        MenuItemRelatorio = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/fundo-MenuPrincipal.jpg"))); // NOI18N
+        LabelFundoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/fundo-MenuPrincipal.jpg"))); // NOI18N
+        getContentPane().add(LabelFundoMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 1000));
 
-        Cadastro.setText("Cadastro");
+        MenuCadastro.setText("  Cadastro  ");
+        MenuCadastro.setActionCommand("Cadastro  ");
+        MenuCadastro.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/cliente-icon.png"))); // NOI18N
-        jMenuItem1.setText("Cliente");
-        Cadastro.add(jMenuItem1);
+        MenuItemCliente.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        MenuItemCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/cliente32-icon.png"))); // NOI18N
+        MenuItemCliente.setText("  Cliente");
+        MenuItemCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemClienteActionPerformed(evt);
+            }
+        });
+        MenuCadastro.add(MenuItemCliente);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/tesoura-icon.png"))); // NOI18N
-        jMenuItem2.setText("Serviso");
-        Cadastro.add(jMenuItem2);
+        MenuItemServico.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        MenuItemServico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/tesoura32-icon.png"))); // NOI18N
+        MenuItemServico.setText("  Serviço");
+        MenuCadastro.add(MenuItemServico);
 
-        jMenuBar1.add(Cadastro);
+        MenuItemUsuario.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        MenuItemUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/usuario32-icon.png"))); // NOI18N
+        MenuItemUsuario.setText("  Usuario");
+        MenuCadastro.add(MenuItemUsuario);
 
-        jMenu2.setText("Operacao");
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(MenuCadastro);
+
+        MenuOperacao.setText("  Operação  ");
+        MenuOperacao.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
+
+        MenuItemAgenda.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        MenuItemAgenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/agenda32-icon.png"))); // NOI18N
+        MenuItemAgenda.setText("  Agenda");
+        MenuOperacao.add(MenuItemAgenda);
+
+        jMenuBar1.add(MenuOperacao);
+
+        MenuRelatorio.setText("  Relatório  ");
+        MenuRelatorio.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
+
+        MenuItemRelatorio.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        MenuItemRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/relatorioTrabalho32-icon.png"))); // NOI18N
+        MenuItemRelatorio.setText("  Trabalho");
+        MenuItemRelatorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemRelatorioActionPerformed(evt);
+            }
+        });
+        MenuRelatorio.add(MenuItemRelatorio);
+
+        jMenuBar1.add(MenuRelatorio);
 
         setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void MenuItemClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuItemClienteActionPerformed
+
+    private void MenuItemRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemRelatorioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuItemRelatorioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -108,11 +144,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Cadastro;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JLabel LabelFundoMenuPrincipal;
+    private javax.swing.JMenu MenuCadastro;
+    private javax.swing.JMenuItem MenuItemAgenda;
+    private javax.swing.JMenuItem MenuItemCliente;
+    private javax.swing.JMenuItem MenuItemRelatorio;
+    private javax.swing.JMenuItem MenuItemServico;
+    private javax.swing.JMenuItem MenuItemUsuario;
+    private javax.swing.JMenu MenuOperacao;
+    private javax.swing.JMenu MenuRelatorio;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     // End of variables declaration//GEN-END:variables
 }
