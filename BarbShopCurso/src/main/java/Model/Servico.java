@@ -9,5 +9,9 @@ package Model;
  * @author l-0-l
  */
 public class Servico {
+    private int id;
+    private String descricao;   
+    private Float valor;
+    
     
 }
