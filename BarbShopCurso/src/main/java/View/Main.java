@@ -4,6 +4,7 @@
  */
 package View;
 
+import Model.Cliente;
 import Model.Servico;
 
 /**
@@ -21,6 +22,14 @@ public class Main {
         
         System.out.println(servico.getDescricao());
         System.out.print(servico.getValor());
+        
+        
+        Cliente cliente = new Cliente(1, "Amanda", 'F', "31901010101" , "CATAPIMBAS");
+        
+        System.out.print(cliente);
+        
+        Usuario usario = new Usario()
+        
     }
     
     

@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author l-0-l
  */
-public class usuario {
+public class Usuario {
     
     private int id;
     private String nome;
@@ -22,7 +22,7 @@ public class usuario {
     private String email;
     private String rg;
 
-    public usuario(int id, String nome, String senha, String nivelAcesso, char sexo, Date dataNascimento, String telefone, String email, String rg) {
+    public Usuario(int id, String nome, String senha, String nivelAcesso, char sexo, Date dataNascimento, String telefone, String email, String rg) {
         this.id = id;
         this.nome = nome;
         this.senha = senha;
@@ -34,7 +34,7 @@ public class usuario {
         this.rg = rg;
     }
 
-    public usuario(int id, String nome, String senha) {
+    public Usuario(int id, String nome, String senha) {
         this.id = id;
         this.nome = nome;
         this.senha = senha;
