@@ -6,6 +6,7 @@ package View;
 
 import Model.Cliente;
 import Model.Servico;
+import Model.Usuario;
 
 /**
  *
@@ -28,7 +29,8 @@ public class Main {
         
         System.out.print(cliente);
         
-        Usuario usario = new Usario()
+        Usuario usuario = new Usuario(01, "Barbeiro", "0101");
+        System.out.print(usuario);
         
     }
     
