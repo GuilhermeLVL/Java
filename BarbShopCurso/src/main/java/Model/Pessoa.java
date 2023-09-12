@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author l-0-l
  */
-public class Pessoa {
+abstract public class Pessoa {
     protected int id;
     protected String nome;
    protected char sexo;
