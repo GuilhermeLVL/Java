@@ -25,12 +25,12 @@ public class Main {
         System.out.print(servico.getValor());
         
         
-        Cliente cliente = new Cliente(1, "Amanda", 'F', "31901010101" , "CATAPIMBAS");
+        Cliente cliente = new Cliente("adasda", "asd", 1, "adasd");
         
         System.out.print(cliente);
         
-        Usuario usuario = new Usuario(01, "Barbeiro", "0101");
-        System.out.print(usuario);
+        Usuario usuario = new Usuario("1231", 1, "123123");
+        System.out.print(usuario.getEmail());
         
     }
     
