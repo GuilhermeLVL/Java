@@ -20,6 +20,14 @@ public class LoginControler {
         
     }
     
+    
+    
+    public void entrearNoSistema(){
+        
+        
+    }
+    
+    
     public void fizTarefa(){
         System.out.println("Busquei algo do banco de dados");
         this.view.exibeMensagem("Executei o fiz tarefa");
