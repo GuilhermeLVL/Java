@@ -23,8 +23,11 @@ public class LoginControler {
     
     
     public void entrearNoSistema(){
-        
-        
+        String nome = view.getTextUsuario().getText();
+         String senha = view.getTextSenha().getText();
+     
+         Usario model = new Usuario(0, nome, senha);
+         
     }
     
     
