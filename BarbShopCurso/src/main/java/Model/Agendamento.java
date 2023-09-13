@@ -4,10 +4,18 @@
  */
 package Model;
 
+import java.util.Date;
+
 /**
  *
  * @author l-0-l
  */
 public class Agendamento {
     
+    private int id ;
+    private Cliente cliente;
+    private Servico servico;
+    private float valor;
+    private Date data;
+    private String observacao;
 }
