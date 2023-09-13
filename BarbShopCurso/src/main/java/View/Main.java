@@ -4,6 +4,7 @@
  */
 package View;
 
+import Model.Agendamento;
 import Model.Cliente;
 import Model.Servico;
 import Model.Usuario;
@@ -31,6 +32,10 @@ public class Main {
         
         Usuario usuario = new Usuario("1231", 1, "123123");
         System.out.print(usuario.getEmail());
+        
+        
+        Agendamento agendamento = new Agendamento(1,cliente,servico, 30,"01/02/2024 03:15");
+        System.out.print(agendamento.getCliente().getNome());
         
     }
     
